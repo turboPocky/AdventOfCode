@@ -25,9 +25,7 @@ namespace Advent.Day_01
         {
             Console.WriteLine("Calculating highest calorie-packing elf from each input file.");
 
-            var files = Directory.EnumerateFiles("./input");
-
-            foreach (var file in files)
+            foreach (var file in Directory.EnumerateFiles("./input"))
             {
                 int highestElfCalorieTotal = default;
                 int currentElfCalorieTotal = default;
